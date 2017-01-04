@@ -1,0 +1,99 @@
+/**
+ * A Conserto theme for reveal.js presentations.
+ */
+
+// Default mixins and settings -----------------
+@import "~reveal.js/css/theme/template/mixins";
+@import "~reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+// Override theme settings
+$consertoColor: #EA5297;
+$mainFont: Calibri, Helvetica, sans-serif;
+$mainFontSize: 38px;
+$mainColor: #000;
+$headingFont: Calibri, Helvetica, sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: uppercase;
+$backgroundColor: #F5F5F5;
+$linkColor: $consertoColor;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$heading1Size: 2.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "~reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+.reveal {
+  .slide-number {
+    background-color: $consertoColor;
+    border-radius: 50%;
+  	width: 50px;
+  	height: 50px;
+    right: -25px;
+    bottom: 20%;
+    text-align: center;
+    padding-right: 15px;
+    line-height: 50px;
+  }
+
+	.slides {
+		text-align: left;
+	}
+
+  section {
+    ul {
+      list-style-type: none;
+      padding:0;
+      margin:0;
+    }
+
+    li {
+      padding-left: 1em;
+      text-indent: -.7em;
+    }
+
+    li:before {
+      content: "•";
+      color: $consertoColor;
+      padding-right: 1em;
+    }
+
+    img {
+    	background: none;
+    	border: none;
+    	box-shadow: none;
+    }
+
+		pre {
+			box-shadow: none;
+      width: 100%;
+
+			code {
+				max-height: 100%;
+			}
+		}
+  }
+
+	section.center {
+		text-align: center;
+	}
+
+  section:first-child {
+    padding-top: 170px;
+
+    h2 {
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+}
