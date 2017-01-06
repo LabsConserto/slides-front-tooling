@@ -38,15 +38,15 @@ module.exports = function makeWebpackConfig () {
     loaders: [
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css']
+        loaders: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'file?name=[name].[ext]'
+        test: /\.(png|eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=[name].[ext]'
       }
     ]
   };
