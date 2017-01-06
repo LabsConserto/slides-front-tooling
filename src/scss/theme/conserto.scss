@@ -22,6 +22,8 @@ $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 $heading1Size: 1.8em;
+$heading2Size: 1.5em;
+$heading3Size: 1.2em;
 
 section.has-dark-background {
 	&, h1, h2, h3, h4, h5, h6 {
@@ -33,38 +35,42 @@ section.has-dark-background {
 @import "~reveal.js/css/theme/template/theme";
 // ---------------------------------------------
 
-html.title body {
-  background: #535353;
+html {
+  background-color: white;
 
-  .reveal {
-    color: #F5F5F5;
-    
-    h1, h2, h3, h4, h5, h6 {
+  &.title body {
+    background: #535353;
+
+    .reveal {
       color: #F5F5F5;
-    }
+      
+      h1, h2, h3, h4, h5, h6 {
+        color: #F5F5F5;
+      }
 
-    .slides > section {
-      background-image: url('./conserto.png');
-      background-repeat: no-repeat;
-      background-size: 800px;
-      padding-top: 200px;
+      .slides > section {
+        background-image: url('./conserto.png');
+        background-repeat: no-repeat;
+        background-size: 800px;
+        padding-top: 200px;
 
-      h2 {
-        text-align: left;
-        text-transform: uppercase;
+        h2 {
+          text-align: left;
+          text-transform: uppercase;
+        }
+      }
+
+      .slide-number {
+        background-color: white;
+        color: black;
+        bottom: 55%;
       }
     }
-
-    .slide-number {
-      background-color: white;
-      color: black;
-      bottom: 55%;
-    }
   }
-}
 
-html.subtitle body {
-  background: #D1D2D0;
+  &.subtitle body {
+    background: #D1D2D0;
+  }
 }
 
 .reveal {
