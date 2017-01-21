@@ -95,17 +95,17 @@ html {
       list-style-type: none;
       padding:0;
       margin:0;
-    }
 
-    li {
-      padding-left: 1em;
-      text-indent: -.7em;
-    }
+      li {
+        padding-left: 1em;
+        text-indent: -.7em;
+      }
 
-    li:before {
-      content: "•";
-      color: $consertoColor;
-      padding-right: 1em;
+      li:before {
+        content: "•";
+        color: $consertoColor;
+        padding-right: 1em;
+      }
     }
 
     img {
