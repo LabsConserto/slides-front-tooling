@@ -62,7 +62,7 @@ Comment utiliser ES6 dès maintenant ?
 --
 
 <!-- .slide: data-background="#f5da55" -->
-![Babel](/images/babel.svg)
+![Babel](images/babel.svg)
 
 Pour transpiler ES6 -> ES5
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -94,7 +94,7 @@ npm run build
 ---
 
 <!-- .slide: data-background="#294E80" -->
-![TypeScript](/images/typescript.svg)
+![TypeScript](images/typescript.svg)
 
 --
 
@@ -233,7 +233,7 @@ Comment on fait ?
 ---
 
 <!-- .slide: data-background="#2B3A42" -->
-![Webpack](/images/webpack.svg)
+![Webpack](images/webpack.svg)
 
 --
 
@@ -248,7 +248,7 @@ Tant qu'à parser des fichiers, il peut parser et manipuler d'autres types de fi
 
 --
 
-![Webpack](/images/webpack-deps.svg)
+![Webpack](images/webpack-deps.svg)
 
 --
 
@@ -359,7 +359,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.less$/,
+        test: /\.sass$/,
         use: [
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
@@ -379,7 +379,7 @@ import css from 'file.sass';
 
 ---
 
-![LESS](/images/less.svg)
+![LESS](images/less.svg)
 
 --
 
@@ -420,7 +420,7 @@ import css from 'file.less';
 
 ---
 
-![PostCSS](/images/postcss.svg)
+![PostCSS](images/postcss.svg)
 
 --
 
@@ -439,7 +439,7 @@ Système de plugins préprocesseurs&nbsp;:
 
 ---
 
-![ESLint](/images/eslint.svg)
+![ESLint](images/eslint.svg)
 
 --
 
